@@ -2,16 +2,22 @@
 A small python project that relies on the Flask framework.
 
 #### Prerequisites
- * Python 2.7.X (I used v2.7.6)
- * Pip 
+ * Python 2.7.X (2.7.6 was used during development)
+ * Pip
+ * virtualenv
 
-Install required project-level packages by running the following comand in the project directory:
+#### Setup
+Create a virtual environment to run the project in. Note that the virtual environment's files will be placed in the current working directory, unless specified otherwise:
 ```shell
-sudo pip install -r requirements.txt
+virtualenv venv
 ```
-*TODO: We should probably use a virtualenv here, rather than installing packages globally. Fix this.*
- 
+
+Install required dependencies by running the following command:
+```shell
+{path-to-virtualenv-folder}/bin/pip install -r requirements.txt
+```
+
 Run with the following command:
 ```shell
-python python-experiment.py
+{path-to-virtualenv-folder}/bin/python python-experiment.py
 ```
